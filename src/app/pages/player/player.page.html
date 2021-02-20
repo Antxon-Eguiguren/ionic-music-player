@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="!isPlaying" [style.background-image]='ambientImg'>
+    <ion-icon
+      slot="icon-only"
+      name="play-circle"
+      (click)="onClickPlayMusic()">
+    </ion-icon>
+  </div>
+  <div *ngIf="isPlaying" style="background-image: url('assets/img/breathe.gif');"></div>
+</ion-content>

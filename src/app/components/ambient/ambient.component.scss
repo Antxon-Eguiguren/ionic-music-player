@@ -1,0 +1,17 @@
+div {
+    height: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 23px;
+        text-transform: capitalize;
+    }
+}
